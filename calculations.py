@@ -19,6 +19,7 @@ def convertToOnlySeconds(time):
 def getElapsedTime(start, end):
     return convertToOnlySeconds(end) - convertToOnlySeconds(start)
 
+# in implementation, write the time back to the time variable in the times table of the database
 print("Time:")
 print(getElapsedTime(start, end), "seconds", end="\n\n")
 

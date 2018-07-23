@@ -6,7 +6,7 @@ SELECT *
 FROM text_base;
 
 SELECT *
-FROM tex t_base
+FROM text_base
 ORDER BY RAND() LIMIT 1;
 
 SELECT *
