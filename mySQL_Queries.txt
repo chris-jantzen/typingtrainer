@@ -1,0 +1,17 @@
+mysql -u root -p *password*
+
+USE trainer_schema
+
+SELECT *
+FROM text_base;
+
+SELECT *
+FROM tex t_base
+ORDER BY RAND() LIMIT 1;
+
+SELECT *
+FROM times;
+
+SELECT title, totalcharacters
+FROM text_base
+WHERE totalcharacters < 200
