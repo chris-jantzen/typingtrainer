@@ -1,3 +1,20 @@
+CREATE SCHEMA `trainer_schema` ;
+
+CREATE TABLE `trainer_schema`.`text_base` (
+  `id` INT NOT NULL,
+  `text` VARCHAR(1045) NOT NULL,
+  `totalcharacterl` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `trainer_schema`.`times` (
+  `text_id` INT NOT NULL,
+  `start_time` INT NOT NULL,
+  `end_time` INT NOT NULL,
+  `number_green` INT NOT NULL,
+  `number_yellow` INT NOT NULL,
+  `number_red` INT NOT NULL);
+
+
 mysql -u root -p *password*
 
 USE trainer_schema
