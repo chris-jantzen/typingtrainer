@@ -5,7 +5,7 @@ use diagnostics;
 # say is the same as print but automatically adds \n
 use feature 'say';
 
-my @listOfText = ("1. Harry Potter", "2. Steve Prefontaine", "3. The Flash", "4. Additional Info", "5. Exit");
+my @listOfText = ("1. Harry Potter", "2. Steve Prefontaine", "3. The Flash", "4. Random", "5. Additional Info", "6. Exit");
 
 my @listOfLengths = (122, 82, 296);
 
@@ -31,12 +31,15 @@ loop: {
             say "The Flash";
             last;
         } elsif ($ans == 4) {
+            say "Random";
+            last;
+        } elsif ($ans == 5) {
             for (my $i=0; $i<$listSize; $i++) {
                 say "$listOfText[$i] is $listOfLengths[$i] long";
             }
             print "\n";
-        } elsif ($ans != 5) {
+        } elsif ($ans != 6) {
             say "Try again";
         }
-    } while $ans != 5
+    } while $ans != 6
 }
