@@ -1,3 +1,6 @@
+Some examples of things that can be typed into mysql from the terminal to make queries
+or set up a new database schema and tables.
+
 CREATE SCHEMA `trainer_schema` ;
 
 CREATE TABLE `trainer_schema`.`text_base` (
